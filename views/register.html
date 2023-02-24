@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Roboto&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f0d3880266.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="C:\Users\ADMIN\Documents\mercado liebre 17\public\css\register.css">
+    <title>register</title>
+</head>
+<body>
+    
+    <main class="content">
+    <form action="/register.html" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="nombreYApellido"></label>
+            <br>
+            <input type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Nombre y Apellido" required title="Debe colocar su nombre completo" oninvalid="this">
+        </div>
+        <br>
+        <div>
+            <label for="nombreUsuario"></label>
+            <br>
+            <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de Usuario" required title="Indique su nombre de Usuario" oninvalid="this">
+        </div>
+        <br>
+        <div>
+            <label for="email"></label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="E-mail" required title="Indique su correo electronico" oninvalid="this">
+        </div>
+        <br>
+        <div>
+            <h2>Fecha de Nacimiento</h2>
+            <br>
+            <label for="FechaNacimiento"></label>
+            <input type="date" name="FechaNacimiento" id="FechaNacimiento">
+        </div>
+        <br>
+        <div>
+            <label for="Domicilio"></label>
+            <br>
+            <input type="text" name="Domicilio" id="Domicilio" placeholder="Domicilio" required title="Indique su direccion de Domicilio" oninvalid="this">
+        </div>
+        <br>
+        <div>
+            <h2>Perfil de Usuario</h2>
+            <br>
+            <input type="radio" name="comprar" value="comprar">
+            <label>Comprador</label>
+        </div>
+        <div>
+            <input type="radio" name="vender" value="vender">
+            <label>Vendedor</label>
+        </div>
+        <br>
+        <div class="seccion-contenido">
+            <h2>Intereses</h2>
+            <br>
+            
+            <input type="checkbox" name="interes" value="Electro"><label>Electro</label>
+            <input type="checkbox" name="interes" value="Moda"><label>Moda</label>
+            <input type="checkbox" name="interes" value="Hogar"><label>Hogar</label>
+            <input type="checkbox" name="interes" value="Jugueteria"><label>Jugueteria</label>
+            <input type="checkbox" name="interes" value="Vida Sana"><label>Vida Sana</label>
+            <br>
+            <br>
+            <div>
+                <label>Foto de Usuario</label>
+                <input type="file" name="fotoUsuario" value="fotoUsuario">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <br>
+                <input type="password" name="contraseña" value="contraseña">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="confirmarContraseña">Confirmar Contraseña:</label>
+                <br>
+                <input type="password" name="confirmarContraseña" value="confirmarContraseña">
+            </div>
+            <br>
+            <button type="reset" class="button-form">Borrar</button>
+        <button type="submit" class="button-form">Enviar</button>
+
+    </form>
+    </main>
+</body>
+</html>
