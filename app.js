@@ -5,7 +5,7 @@ const path = require ("path");
 const app = express();
 
 
-app.use(express.static(path.resolve(__dirname, "/.public")));
+app.use(express.static(path.resolve(__dirname, "./public")));
 
 const port = process.env.PORT || 3000;
 
@@ -16,7 +16,7 @@ app.listen(port, function ()  {
 
 
 app.get("/", function(req, res)  {
-    res.sendFile(path.join(__dirname, "views"));
+    res.sendFile(path.join(__dirname, "./views/home.html"));
     
 })
 app.get("/register", function(req, res)  {
